@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reconhecedor de Jutsus</title>
+    <!-- bootstrap -->
+    <link href="src/css/bootstrap.min.css" rel="stylesheet">
+    <!-- style interno -->
+    <link href="src/css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container py-5">
+
+        <div class="card p-4">
+            <h2 class="text-center mb-4">🌀 Reconhecedor de Jutsus</h2>
+
+            <div class="mb-3">
+                <label class="form-label">Selecionar selo</label>
+                <select id="selo" class="form-select">
+                    <option value="">-- Escolha um selo --</option>
+                    <option value="R">Rato - R</option>
+                    <option value="B">Boi - B</option>
+                    <option value="T">Tigre - T</option>
+                    <option value="O">Coelho - O</option>
+                    <option value="D">Dragão - D</option>
+                    <option value="C">Cobra - C</option>
+                    <option value="H">Cavalo - H</option>
+                    <option value="S">Carneiro - S</option>
+                    <option value="M">Macaco - M</option>
+                    <option value="P">Pássaro - P</option>
+                    <option value="I">Cão - I</option>
+                    <option value="J">Javali - J</option>
+                </select>
+            </div>
+
+            <div class="d-flex gap-2 mb-3">
+                <button class="btn btn-custom w-100" onclick="adicionarSelo()">Adicionar</button>
+                <button class="btn btn-danger w-100" onclick="resetar()">Resetar</button>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Sequência de selos</label>
+                <input type="text" id="entrada" class="form-control" readonly>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Resultado</label>
+                <div id="resultado" class="p-2 border rounded">...</div>
+            </div>
+
+            <div class="card border-warning mb-3">
+                <div class="card-header bg-warning text-dark">
+                    ⚠️ Tutorial de Jutsus
+                </div>
+                <div class="card-body">
+                    <p class="h4 text-center">
+                        Selecione um jutsu abaixo para visualizar a sequência correta de selos necessária para
+                        executá-lo.
+                    </p>
+                    <hr>
+
+                    <div class="mb-3"> <label class="form-label">Selecionar Jutsu (ver sequência)</label> <select
+                            id="jutsuSelect" class="form-select" onchange="mostrarSequencia()">
+                            <option value="">-- Escolha um jutsu --</option>
+                            <option value="CSMJHT">Katon: Goukakyuu no Jutsu</option>
+                            <option value="CST">Katon: Housenka no Jutsu</option>
+                            <option value="TSMC">Katon: Ryuuka no Jutsu</option>
+                            <option value="TSDSMI">Suiton: Suiryuudan no Jutsu</option>
+                            <option value="TSD">Suiton: Suijinheki</option>
+                            <option value="TSP">Suiton: Teppoudama</option>
+                            <option value="TCS">Fuuton: Daitoppa</option>
+                            <option value="CS">Fuuton: Reppushou</option>
+                            <option value="TS">Raiton: Jibashi</option>
+                            <option value="TSM">Raiton: Gian / Mokuton</option>
+                            <option value="TSIJ">Doton: Doryuuheki</option>
+                            <option value="PMT">Genjutsu: Kai</option>
+                            <option value="PMI">Kuchiyose: Sapo</option>
+                            <option value="CI">Kuchiyose: Cobra</option>
+                        </select>
+                    </div>
+                    <div> <label class="form-label">Sequência do Jutsu</label>
+                        <div id="sequenciaJutsu" class="p-2 border rounded">...</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="src/js/config.js"></script>
+
+</body>
+
+</html>

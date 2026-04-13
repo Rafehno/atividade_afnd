@@ -1,0 +1,38 @@
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        body,
+        body * {
+            color: #fff !important;
+        }
+
+        .card {
+            background-color: #111;
+            border: 1px solid #444;
+        }
+
+        .form-control,
+        .form-select {
+            background-color: #222;
+            color: #fff;
+            border: 1px solid #555;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            background-color: #222;
+            color: #fff;
+            border-color: #888;
+            box-shadow: none;
+        }
+
+        .btn-custom {
+            background-color: #444;
+            color: #fff;
+        }
+
+        .btn-custom:hover {
+            background-color: #666;
+        }
