@@ -2,7 +2,7 @@ Diogo Rafael Varela Butzke - 172316253
 
 Gabriel Gomes Fernandes - 172317728
 
-Gabriel Klein -
+Gabriel Luiz Klein - 172312555
 
-João Brasil -
+João Pedro Brasil - 172311360
 
